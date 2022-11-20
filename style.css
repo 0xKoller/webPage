@@ -1,0 +1,113 @@
+:root {
+  background-color: #222;
+  color: white;
+}
+
+section {
+  margin: 3vh;
+  display: flex;
+}
+
+div {
+  margin: 1vh;
+  padding: 0 1.5vw;
+  width: fit-content;
+  height: fit-content;
+}
+
+#start {
+  height: 100vh;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.glass {
+  background: rgba(136, 136, 136, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#welcome {
+  align-self: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#serious {
+  display: flex;
+  justify-content: center;
+}
+
+.jobs-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-self: center;
+}
+
+.card-job {
+  height: 250px;
+  width: 700px;
+  padding: 0 2em;
+  margin: 5vh;
+}
+
+.studies-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.studies-item {
+  width: 60vw;
+  margin: 5vh;
+}
+
+.projects {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.projects p {
+  align-self: center;
+  text-align: center;
+}
+
+.social-container {
+  justify-content: space-between;
+  align-self: center;
+}
+
+.social {
+  height: 150px;
+  width: 200px;
+  padding: 0;
+  margin: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social svg {
+  width: 5vw;
+}
+
+.left {
+  margin-left: 0;
+  margin-right: 25vw;
+}
+
+.rigth {
+  margin-right: 0;
+  margin-left: 25vw;
+}
