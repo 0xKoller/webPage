@@ -20,6 +20,10 @@ h5 {
   text-decoration: underline;
 }
 
+.scroll {
+  display: none;
+}
+
 .bubble-one {
   position: relative;
   right: 20vw;
@@ -370,12 +374,18 @@ div {
 }
 
 @media (max-width: 780px) {
-  #start {
+  .jobs-container {
     display: flex;
     flex-direction: column;
   }
+  #start {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
   .row {
     flex-direction: column;
+    align-self: center;
   }
   .left {
     margin: 3vh 0;
@@ -384,8 +394,8 @@ div {
     margin: 3vh 0;
   }
   .card-job {
-    width: 70vw;
-    padding: 0.5vh 10vw;
+    width: 80vw;
+    padding: 0.5vh 5vw;
   }
   .studies-item {
     width: 80vw;
@@ -423,7 +433,49 @@ div {
     margin: 2vh 0;
     align-self: center;
   }
+  .social {
+    margin: 2vh 0;
+  }
   .social svg {
     width: 20vw;
+  }
+  .images img {
+    position: unset;
+  }
+  .images {
+    margin: 0 1vw;
+    display: flex;
+    align-self: center;
+  }
+  .principal {
+    animation: none;
+    left: 0;
+    margin: 20vh 0;
+    width: 300px;
+    border-radius: 1vh;
+    align-self: center;
+  }
+  .secundaria {
+    display: none;
+  }
+  .scroll {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    animation: blink 3s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0% {
+      color: white;
+    }
+    50% {
+      color: #222;
+    }
+    100% {
+      color: white;
+    }
+  }
+  .column {
+    margin: 0;
   }
 }
