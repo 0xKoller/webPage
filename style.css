@@ -213,7 +213,7 @@ div {
 
 .glass {
   background: rgba(136, 136, 136, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 4px 28px 0 rgb(119, 78, 0);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -224,6 +224,9 @@ div {
   align-self: center;
 }
 
+.brief {
+  width: 20vw;
+}
 .row {
   display: flex;
   justify-content: space-between;
@@ -316,5 +319,111 @@ div {
   100% {
     margin-bottom: 0;
     fill: gray;
+  }
+}
+
+.images img {
+  position: absolute;
+}
+
+.principal {
+  border-radius: 10vh;
+  left: 60vw;
+  top: 20vh;
+  animation: principal 3s infinite;
+}
+
+@keyframes principal {
+  0% {
+    top: 20vh;
+  }
+  50% {
+    top: 15vh;
+  }
+  100% {
+    top: 20vh;
+  }
+}
+
+.secundaria {
+  width: 250px;
+  height: 250px;
+  border-radius: 50vh;
+  left: 55vw;
+  top: 55vh;
+  animation: secundaria 5s infinite;
+}
+
+@keyframes secundaria {
+  0% {
+    top: 55vh;
+    left: 55vw;
+  }
+  50% {
+    top: 60vh;
+    left: 60vw;
+  }
+  100% {
+    top: 55vh;
+    left: 55vw;
+  }
+}
+
+@media (max-width: 780px) {
+  #start {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .left {
+    margin: 3vh 0;
+  }
+  .rigth {
+    margin: 3vh 0;
+  }
+  .card-job {
+    width: 70vw;
+    padding: 0.5vh 10vw;
+  }
+  .studies-item {
+    width: 80vw;
+    padding: 0.5vh 5vw;
+  }
+  .bubble-one {
+    display: none;
+  }
+  .bubble-two {
+    display: none;
+  }
+  .bubble-three {
+    display: none;
+  }
+  .bubble-four {
+    display: none;
+  }
+  .bubble-five {
+    display: none;
+  }
+  .bubble-six {
+    display: none;
+  }
+  .bubble-seven {
+    display: none;
+  }
+  .bubble-eight {
+    display: none;
+  }
+  .bubble-nine {
+    display: none;
+  }
+  .brief {
+    width: 70vw;
+    margin: 2vh 0;
+    align-self: center;
+  }
+  .social svg {
+    width: 20vw;
   }
 }
