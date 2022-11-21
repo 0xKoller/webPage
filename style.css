@@ -178,15 +178,15 @@ h5 {
 
 @keyframes nine {
   0% {
-    top: 400vh;
+    top: 380vh;
     left: 0vw;
   }
   50% {
-    top: 430vh;
-    left: 50vw;
+    top: 410vh;
+    left: 70vw;
   }
   100% {
-    top: 400vh;
+    top: 380vh;
     left: 0vw;
   }
 }
