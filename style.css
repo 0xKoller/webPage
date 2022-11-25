@@ -373,7 +373,7 @@ div {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1280px) {
   .jobs-container {
     display: flex;
     flex-direction: column;
@@ -433,8 +433,20 @@ div {
     margin: 2vh 0;
     align-self: center;
   }
+  .social-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw 4vh;
+    margin: 1vh 0;
+  }
+
+  .glass.social {
+    width: 40vw;
+    height: 30vw;
+  }
+
   .social {
-    margin: 2vh 0;
+    margin: 1vh 0;
   }
   .social svg {
     width: 20vw;
