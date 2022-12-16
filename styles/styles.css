@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/texture.webp");
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 1vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.data {
+  width: 350px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 10px 13px 32px -18px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 13px 32px -18px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 13px 32px -18px rgba(0, 0, 0, 0.75);
+  color: black;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2vh;
+  gap: 2vh 4vw;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 1vh;
+  border: 2px solid rgb(22, 22, 22);
+  transition: background-color 500ms;
+}
+
+.card:hover {
+  background-color: rgba(42, 42, 42, 0.8);
+}
+
+.card svg {
+  display: block;
+  margin: auto;
+}
+.card p {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.giftify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #ffe600 21px, transparent 1%) center,
+    linear-gradient(#ffe600 21px, transparent 1%) center, #242d7a;
+  background-size: 22px 22px;
+  transition: background 600ms;
+  border: 2px solid #242d7a;
+  margin: 2vh;
+}
+
+.giftify p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #242d7a;
+}
+
+.giftify:hover {
+  background: linear-gradient(90deg, #ffe600 21px, transparent 1%) center,
+    linear-gradient(#ffe600 21px, transparent 1%) center, #242d7a;
+  background-size: 23px 23px;
+}
+
+@media screen and (max-width: 700px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+  .data {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    margin: 0 1vw;
+  }
+  .giftify {
+    margin: 1vh 1vw;
+  }
+}
